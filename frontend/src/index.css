@@ -1,0 +1,21 @@
+:root {
+  color-scheme: light;
+  font-family: system-ui, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --bg: #f4f8ff;
+  --panel: #ffffff;
+  --text: #17324d;
+  --muted: #67809a;
+  --accent: #3e7cff;
+  --accent-soft: #eaf2ff;
+  --border: #dce9ff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #f4f8ff 0%, #eef6ff 100%);
+  color: var(--text);
+}

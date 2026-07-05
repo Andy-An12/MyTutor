@@ -1,0 +1,14 @@
+.env
+backend/.env
+node_modules/
+frontend/node_modules/
+dist/
+frontend/dist/
+__pycache__/
+*.pyc
+.venv/
+backend/uploads/
+backend/output/
+*.egg-info/
+target/
+backend/target/

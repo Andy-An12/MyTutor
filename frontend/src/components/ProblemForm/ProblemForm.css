@@ -1,0 +1,51 @@
+.form-panel select,
+.form-panel textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: white;
+  color: var(--text);
+  font: inherit;
+}
+
+.form-panel .grid-two {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin: 16px 0;
+}
+
+.form-panel label span {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.form-panel button {
+  width: 100%;
+  margin-top: 16px;
+  border: none;
+  border-radius: 999px;
+  background: var(--accent);
+  color: white;
+  padding: 12px 16px;
+  font-weight: 700;
+  font: inherit;
+  cursor: pointer;
+}
+
+.form-panel button:hover:not(:disabled) {
+  opacity: 0.95;
+}
+
+.form-panel button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.form-error {
+  color: #d1435b;
+  font-size: 0.88rem;
+  margin: 10px 0 0;
+}
