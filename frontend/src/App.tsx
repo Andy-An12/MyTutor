@@ -40,11 +40,6 @@ function App() {
           Upload a photo of a problem you're stuck on, and MyTutor will walk you through where
           you went wrong and how to solve it — years 1 through 12.
         </p>
-        <p className="worksheet-fields" aria-hidden="true">
-          <span>Name:</span>
-          <span>Date:</span>
-          <span>Score:</span>
-        </p>
       </header>
 
       <main className="content-grid">
