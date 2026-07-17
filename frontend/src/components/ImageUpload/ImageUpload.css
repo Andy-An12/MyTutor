@@ -5,19 +5,20 @@
 .image-upload .upload-control button.upload-btn {
   width: 100%;
   margin-top: 0;
-  padding: 10px 14px;
-  background: var(--accent-soft);
-  color: var(--text);
-  border: 1px dashed var(--border);
-  border-radius: 12px;
+  padding: 11px 14px;
+  background: var(--pen-soft);
+  color: var(--ink);
+  border: 1.5px dashed var(--pen);
+  border-radius: 6px;
   font: inherit;
   font-weight: 600;
   cursor: pointer;
+  box-shadow: none;
 }
 
 .image-upload .upload-control button.upload-btn:hover {
-  background: var(--border);
-  opacity: 1;
+  background: white;
+  transform: none;
 }
 
 .upload-options-backdrop {
@@ -36,10 +37,10 @@
   flex-direction: column;
   gap: 4px;
   padding: 6px;
-  background: var(--panel);
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  background: var(--card);
+  border: 1.5px solid var(--ink);
+  border-radius: 6px;
+  box-shadow: 3px 3px 0 rgba(35, 42, 61, 0.15);
 }
 
 .image-upload .upload-options button {
@@ -47,18 +48,19 @@
   margin-top: 0;
   padding: 10px 14px;
   background: transparent;
-  color: var(--text);
+  color: var(--ink);
   border: none;
-  border-radius: 8px;
+  border-radius: 4px;
   font: inherit;
   font-weight: 600;
   text-align: left;
   cursor: pointer;
+  box-shadow: none;
 }
 
 .image-upload .upload-options button:hover {
-  background: var(--accent-soft);
-  opacity: 1;
+  background: var(--pen-soft);
+  transform: none;
 }
 
 .preview-box {
@@ -67,17 +69,23 @@
   justify-content: center;
   min-height: 180px;
   margin: 16px 0;
-  border: 1px dashed var(--border);
-  border-radius: 16px;
-  background: var(--accent-soft);
-  color: var(--muted);
+  border: 1.5px dashed var(--line);
+  border-radius: 6px;
+  background: rgba(43, 80, 192, 0.03);
+  color: var(--ink-muted);
   padding: 16px;
   text-align: center;
+}
+
+.preview-box p {
+  font-family: var(--hand);
+  font-size: 1.2rem;
+  margin: 0;
 }
 
 .preview-box img {
   max-width: 100%;
   max-height: 180px;
-  border-radius: 12px;
+  border-radius: 4px;
   object-fit: contain;
 }

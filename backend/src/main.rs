@@ -36,7 +36,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
         .layer(cors)
         .with_state(app_state);
 
-    let addr = SocketAddr::from(([127, 0, 0, 1], 3000));
+    let addr = SocketAddr::from(([127, 0, 0, 1], 5173));
     let listener = TcpListener::bind(addr).await?;
     println!("MyTutor backend running on http://{}", addr);
     axum::serve(listener, app).await?;

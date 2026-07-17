@@ -1,6 +1,6 @@
 import type { TutorRequest, TutorResponse } from "../types/tutor";
 
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL ?? "http://127.0.0.1:3000";
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL ?? "http://127.0.0.1:5173";
 
 export async function analyzeProblem(request: TutorRequest): Promise<TutorResponse> {
   const response = await fetch(`${API_BASE_URL}/api/tutor`, {

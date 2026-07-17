@@ -32,7 +32,7 @@ cd backend
 cargo run
 ```
 
-The API server runs on `http://127.0.0.1:3000`.
+The API server runs on `http://127.0.0.1:5173`.
 
 ### 3) Start the frontend
 
@@ -42,4 +42,4 @@ npm install
 npm run dev
 ```
 
-Open the URL Vite prints (typically `http://localhost:5173`).
+Open the URL Vite prints (typically `http://localhost:3000`).

@@ -48,15 +48,21 @@ export function ResultPanel({ status, result, error }: ResultPanelProps) {
   return (
     <div>
       <div className="result-card">
-        <h3>1. Where you went wrong</h3>
+        <h3>
+          <span className="mark-num" aria-hidden="true">1</span> Where you went wrong
+        </h3>
         <p>{result.issue}</p>
       </div>
       <div className="result-card">
-        <h3>2. How to approach it</h3>
+        <h3>
+          <span className="mark-num" aria-hidden="true">2</span> How to approach it
+        </h3>
         <p>{result.idea}</p>
       </div>
       <div className="result-card">
-        <h3>3. Solution steps</h3>
+        <h3>
+          <span className="mark-num" aria-hidden="true">3</span> Solution steps
+        </h3>
         <ul>
           {result.steps.map((step, index) => (
             <li key={index}>{step}</li>
@@ -70,17 +76,21 @@ export function ResultPanel({ status, result, error }: ResultPanelProps) {
 
       {isAnswerRevealed ? (
         <div className="answer-area">
-          <div className="result-card">
-            <h3>4. Answer</h3>
+          <div className="result-card answer-card">
+            <h3>
+              <span className="mark-num" aria-hidden="true">4</span> Answer
+            </h3>
             <p>{result.answer_hint}</p>
           </div>
           <div className="result-card">
-            <h3>5. Study tip</h3>
+            <h3>
+              <span className="mark-num" aria-hidden="true">5</span> Study tip
+            </h3>
             <p>{result.study_tip}</p>
           </div>
         </div>
       ) : (
-        <button type="button" className="secondary-btn" onClick={() => setIsAnswerRevealed(true)}>
+        <button type="button" className="reveal-btn" onClick={() => setIsAnswerRevealed(true)}>
           Reveal Answer
         </button>
       )}
